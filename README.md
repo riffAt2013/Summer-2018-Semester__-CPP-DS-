@@ -1,3 +1,3 @@
-## Code-of-All-Projects-and-Practice-Sessions
+## Code of All Projects and Practice Sessions
 
 
