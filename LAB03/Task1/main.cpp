@@ -5,10 +5,18 @@ using namespace std;
 
 int main()
 {
-    dynamic <float> c (10);
-    c.setValue(0, 54.55);
-    c.setValue(1, 154.55);
-    c.setValue(2, 254.55);
+    int N;
+    cout<<"Enter size: "<<'\n';
+    cin>>N;
+    dynamic <float> c (N);
+    cout<<"Enter index values from 0-N: "<<endl;
+    for (int i=0; i<N; i++)
+    {
+        int temp; cin>>temp; c.setValue(i,temp);
+    }
 
-    cout<<c.getValue(0);
+    cout<<"Which index value to show ";
+    int temp;
+    cin>>temp;
+    cout<<c.getValue(temp);
 }
