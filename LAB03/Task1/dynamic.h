@@ -11,7 +11,6 @@ private:
 public:
     dynamic(int);
     ~dynamic();
-
     ARB getValue (int);
     void setValue (int, ARB);
 
