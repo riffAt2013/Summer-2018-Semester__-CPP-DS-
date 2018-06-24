@@ -1,9 +1,9 @@
 ## Code of All Projects and Practice Sessions
 
-Basically all the code I've done yet(mostly :P) and will ever do till 2021. Including:
+Basically all the code I've done yet(mostly :P) and will ever do till 2021. **Including**:
 
--Projects
+- Projects
 
--Online Judge Solves
+- Online Judge Solves
 
--Other Codes
+- Other Codes
