@@ -12,7 +12,7 @@ int main()
     cout<<"Enter index values from 0-N: "<<endl;
     for (int i=0; i<N; i++)
     {
-        int temp; cin>>temp; c.setValue(i,temp);
+        float temp; cin>>temp; c.setValue(i,temp);
     }
 
     cout<<"Which index value to show ";
