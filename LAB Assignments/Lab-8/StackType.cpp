@@ -12,13 +12,13 @@ StackType<ItemType>::StackType()
 }
 
 template <class ItemType>
-bool StackType<ItemType>::IsEmpty()
+bool StackType<ItemType>::IsEmpty() const
 {
     return (top == -1);
 }
 
 template <class ItemType>
-bool StackType<ItemType>::IsFull()
+bool StackType<ItemType>::IsFull()  const
 {
     return (top ==  MAX_ITEMS-1);
 }
@@ -40,7 +40,7 @@ void StackType<ItemType>::Pop()
     top--;
 }
 template <class ItemType>
-ItemType StackType<ItemType>::Top()
+ItemType StackType<ItemType>::Top() const
 {
     if (IsEmpty())
         return 0;
