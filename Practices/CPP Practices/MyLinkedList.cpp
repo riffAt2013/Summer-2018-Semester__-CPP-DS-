@@ -1,5 +1,6 @@
 
 #include <iostream>
+
 using namespace std;
 
 
@@ -12,12 +13,15 @@ struct Node
 class LinkedList{
 private :
     Node *listData, *currentPosition;
+    int size;
 
 public:
     LinkedList ()
     {
         listData = NULL;
         currentPosition = NULL;
+        size = 0;
+
     }
     LinkedList (int n)
     {
@@ -27,10 +31,12 @@ public:
 
         temp = listData;
         temp = currentPosition;
+        size =1;
     }
 
     void add(int n)
     {
+        size++;
         Node *temp = new Node;
         temp->data = n;
         temp->next = NULL;
@@ -64,6 +70,11 @@ public:
         return listData;
     }
 
+    int getS()
+    {
+        return size;
+    }
+
     void dispRec (Node* listData)
     {
         if (listData == NULL)
@@ -73,6 +84,24 @@ public:
             dispRec (listData->next);
         }
 
+    }
+
+    void del (int d)
+    {
+        Node* temp;
+        temp = listData;
+
+        if (temp==NULL) return;
+        while (temp->next!=NULL)
+        {
+            if (temp->next->data==d)
+            {
+                Node*temp1 = temp->next;
+                temp->next = temp1->next;
+                delete temp1;
+            }
+            else {temp=temp->next;}
+        }
     }
 
 };
@@ -91,6 +120,11 @@ public:
         a.add(14214213);
         a.add(3313);
 
+        a.del (13);
+
         a.dispRec (a.get());
+
+//        cout<<'\n';cout<<a.getS();
+
         return 0;
     }
