@@ -1,6 +1,6 @@
 ## Code of All Projects and Practice Sessions
 
-Basically all the code I've done yet(mostly :P) and will ever do till 2022. **Including**:
+All the codes of Summer 2018 (C++/DS) Semester here at NSU **Including**:
 
 - Projects
 
