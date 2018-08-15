@@ -8,7 +8,7 @@ var2 = 23
 
 var3 = False    #Always capitalize bool
 
-print(not var3)
+print(not var3)   #F*** ! sign
 
 print (var)
 
